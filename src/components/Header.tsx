@@ -30,7 +30,10 @@ const Header = () => {
           </div>
 
           <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
-            {isOpen ? <CloseIcon size={24} /> : <MenuIcon size={24} />}
+            {isOpen ? <CloseIcon size={22} /> : <MenuIcon size={22} />}
+            <span style={{ marginLeft: '6px', fontSize: '0.9rem', fontWeight: 600 }}>
+              {isOpen ? 'Close' : 'Menu'}
+            </span>
           </button>
         </div>
       </div>

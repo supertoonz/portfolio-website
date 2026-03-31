@@ -42,12 +42,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
-    border: none;
+    background: var(--color-surface-hover);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
     color: var(--color-text);
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     z-index: 101;
+    transition: background var(--transition-fast);
+}
+
+.mobile-menu-btn:active {
+    background: var(--color-border);
 }
 
 .nav-link {
